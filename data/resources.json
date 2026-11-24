@@ -1,0 +1,532 @@
+[
+  {
+    "cat": "官方平台",
+    "sub": "国家平台",
+    "name": "国家中小学智慧教育平台",
+    "scope": "小学—高中全学科",
+    "link": "https://basic.smartedu.cn/",
+    "desc": "电子教材、课程视频、学习任务单、课后练习、精品课课件与教学设计",
+    "access": "全免费",
+    "note": "教育部主办；资源禁止商用。教材专区：basic.smartedu.cn/tchMaterial；精品课：jpk.basic.smartedu.cn/publicity"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "国家平台",
+    "name": "人教社教材电子版",
+    "scope": "小学—高中、盲校/聋校/培智",
+    "link": "https://jc.pep.com.cn/",
+    "desc": "人教版电子教材在线阅读/下载",
+    "access": "免费",
+    "note": "页面注明“仅供个人学习使用，未经授权不得另做他用”"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "国家平台",
+    "name": "国家智慧教育公共服务平台",
+    "scope": "全学段",
+    "link": "https://www.smartedu.cn/",
+    "desc": "中小学、职教、高教、就业服务与 AI 工具总入口",
+    "access": "免费",
+    "note": "教育部一站式平台"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "省级平台",
+    "name": "北京空中课堂",
+    "scope": "小学—高中",
+    "link": "https://basic.beijing.smartedu.cn/",
+    "desc": "市级课程视频；“一课一包”含教案、PPT、学习任务单、作业",
+    "access": "免费",
+    "note": "部分资源需北京教育ID；旧入口 bdschool.cn 仍可参考"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "省级平台",
+    "name": "江苏名师空中课堂",
+    "scope": "小学—高中",
+    "link": "https://mskzkt.jse.edu.cn/cloudCourse/index/pc",
+    "desc": "3.57 万节课程；优秀作业单可下载",
+    "access": "全免费、无需注册",
+    "note": "视频仅支持在线观看；作业单可在 PC/公众号下载"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "省级平台",
+    "name": "安徽中小学智慧教育平台",
+    "scope": "小学—高中",
+    "link": "https://basic.ah.smartedu.cn/",
+    "desc": "课程教学、美育、体育、资源专区",
+    "access": "免费",
+    "note": "安徽省教育厅主办"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "省级平台",
+    "name": "浙江之江汇教育广场",
+    "scope": "小学—高中",
+    "link": "https://yun.zjer.cn/",
+    "desc": "备授课资源、网络学习空间、教学端工具",
+    "access": "公益免费",
+    "note": "浙江省教育技术中心主办"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "传统文化",
+    "name": "中华经典资源库",
+    "scope": "中小学语文/传统文化",
+    "link": "https://www.peeavp.com.cn/zhjdzyk/",
+    "desc": "400+集、约 12000 分钟诵读/讲解/书写视频",
+    "access": "免费",
+    "note": "教育部、国家语委项目；有手机 App"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "教科书研究",
+    "name": "中国百年中小学教科书图像库",
+    "scope": "教科书研究",
+    "link": "https://textbook.pep.com.cn/",
+    "desc": "清末以来中小学教科书图像",
+    "access": "免费",
+    "note": "人教社特色数据库；适合研究/历史教学，不是现行教材"
+  },
+  {
+    "cat": "官方平台",
+    "sub": "教科书研究",
+    "name": "中国近现代中小学教科书全文数据库",
+    "scope": "教科书研究",
+    "link": "https://lcm-new.pep.com.cn/",
+    "desc": "近现代中小学教科书全文",
+    "access": "免费",
+    "note": "人教社特色数据库"
+  },
+  {
+    "cat": "教材获取",
+    "sub": "开源项目",
+    "name": "ChinaTextbook",
+    "scope": "小学—高中 + 大学",
+    "link": "https://github.com/TapXWorld/ChinaTextbook",
+    "desc": "41.53GB PDF 教材，按学段/学科/版本分层；含 8 种主流版本",
+    "access": "免费",
+    "note": "仓库标注 Apache-2.0；内容版权归原出版社；>50MB 文件被切成 35MB 分卷，需合并工具"
+  },
+  {
+    "cat": "教材获取",
+    "sub": "开源项目",
+    "name": "ChinaTextbook-tools",
+    "scope": "教材 PDF 分卷",
+    "link": "https://github.com/TapXWorld/ChinaTextbook-tools",
+    "desc": "合并/分割 ChinaTextbook 的分卷 PDF",
+    "access": "免费",
+    "note": "配合 ChinaTextbook 使用"
+  },
+  {
+    "cat": "教材获取",
+    "sub": "开源项目",
+    "name": "tchMaterial-parser",
+    "scope": "国家平台电子课本",
+    "link": "https://github.com/happycola233/tchMaterial-parser",
+    "desc": "批量下载国家平台电子课本 PDF，自动命名、自动加书签",
+    "access": "免费",
+    "note": "MIT；Windows/Linux/macOS 图形界面；仅限个人学习；v3.1 无 Token 的回退下载方式不保证长期有效"
+  },
+  {
+    "cat": "教材获取",
+    "sub": "在线阅读",
+    "name": "电子课本网",
+    "scope": "小学—高中多版本",
+    "link": "http://www.dzkbw.com/",
+    "desc": "人教/北师大/浙教/沪科/译林/青岛/外研/教科等版本在线阅读",
+    "access": "免费",
+    "note": "非官方站点；以在线阅读为主，下载能力因页面而异"
+  },
+  {
+    "cat": "教材获取",
+    "sub": "官方链接汇总",
+    "name": "教育部国家课程教材电子版链接汇总",
+    "scope": "小学—高中多出版社",
+    "link": "https://www.peopleapp.com/rmharticle/30015882834",
+    "desc": "2020 年各出版社免费电子教材链接汇总",
+    "access": "免费",
+    "note": "历史链接，部分可能失效；可作为非人教版教材的补充线索"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "全免费",
+    "name": "莲山课件",
+    "scope": "幼儿园—高中全科",
+    "link": "https://www.5ykj.com/",
+    "desc": "6 万+课件、9 万+试题、9 万+教案，共约 40 万篇资料",
+    "access": "全免费",
+    "note": "界面较老；下载直接，适合快速找同步课件/试卷"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "全免费",
+    "name": "第一课件网",
+    "scope": "小学—高中",
+    "link": "http://m.1kmn.com/",
+    "desc": "课件、教案、教程、动画",
+    "access": "免费",
+    "note": "资源偏传统，适合补充"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "全免费",
+    "name": "绿色圃中小学教育网",
+    "scope": "小学—高中",
+    "link": "http://www.lspjy.com/",
+    "desc": "各学科课件、教案",
+    "access": "免费",
+    "note": "下载链接相对干净"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "全免费",
+    "name": "小学资源网",
+    "scope": "小学",
+    "link": "http://www.xj5u.com/",
+    "desc": "电子课本、教案、讲义、PPT 课件、教学反思",
+    "access": "免费",
+    "note": "小学专精，内容精选度较高"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "部分免费",
+    "name": "学科网",
+    "scope": "小学—高中全科",
+    "link": "https://www.zxxk.com/",
+    "desc": "试卷、课件、教案、学案；中考/高考真题专区",
+    "access": "部分免费/学币",
+    "note": "资源量最大；组卷网 zujuan.xkw.com 注册用户 5 次/日免费下载"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "部分免费",
+    "name": "21世纪教育网",
+    "scope": "小学—高中",
+    "link": "https://www.21cnjy.com/",
+    "desc": "试题、课件、教案、学案",
+    "access": "大部分付费（学币），有免费卷",
+    "note": "最新校考/期中期末卷较多"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "部分免费",
+    "name": "菁优网",
+    "scope": "小学—高中全科",
+    "link": "https://www.jyeoo.com/",
+    "desc": "3000 万题、250 万套试卷；组卷、解析、下载 Word/PDF",
+    "access": "基础功能免费，VIP 付费",
+    "note": "数理化解析较强；适合出卷/查题"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "部分免费",
+    "name": "组卷网",
+    "scope": "小学—高中",
+    "link": "https://zujuan.xkw.com/",
+    "desc": "智能组卷、试题/试卷下载",
+    "access": "注册用户 5 次/日免费",
+    "note": "学科网旗下组卷工具"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "免费真题",
+    "name": "中国教育出版网",
+    "scope": "小学—高中",
+    "link": "http://www2.zzstep.com/",
+    "desc": "中考真题 PDF、各科试卷",
+    "access": "中考真题免费",
+    "note": "2026 年中考真题可下载"
+  },
+  {
+    "cat": "课件教案试卷",
+    "sub": "补充",
+    "name": "好课件吧",
+    "scope": "小学—高中",
+    "link": "http://www.goodkejian.com/",
+    "desc": "课件资源",
+    "access": "免费为主",
+    "note": "补充站点，资源量小于前几个"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "K12 教材",
+    "name": "CK-12",
+    "scope": "K12 数学/科学/英语",
+    "link": "https://www.ck12.org/",
+    "desc": "FlexBook 在线教材、PDF/DOCX 答案、自适应练习",
+    "access": "免费",
+    "note": "CC BY-NC；英文；需免费账号使用部分功能"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "高中/大学",
+    "name": "OpenStax K12",
+    "scope": "高中/大学",
+    "link": "https://openstax.org/k12",
+    "desc": "教材在线阅读与 PDF 下载，免登录",
+    "access": "免费",
+    "note": "CC BY；英文；多数为大学入门教材，高中可选用"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "K12 数学",
+    "name": "Illustrative Mathematics",
+    "scope": "TK—12 数学",
+    "link": "https://illustrativemathematics.org/math-curriculum/",
+    "desc": "完整课程、课时、可打印 PDF",
+    "access": "免费",
+    "note": "第一版 CC BY 4.0；v360 为 CC BY-NC 4.0；英文/美国课标"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "K12 数学",
+    "name": "AccessIM",
+    "scope": "TK—12 数学",
+    "link": "https://accessim.org/",
+    "desc": "IM 课程免费数字访问、学生/家庭材料 PDF",
+    "access": "免费",
+    "note": "评估等受限材料需教师账号"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "K12 数学/ELA",
+    "name": "Open Up Resources",
+    "scope": "K12 数学/英语语言艺术",
+    "link": "https://www.openupresources.org/",
+    "desc": "开放课程与教学材料",
+    "access": "免费",
+    "note": "CC BY；需注册下载"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "科学仿真",
+    "name": "PhET",
+    "scope": "物理/化学/生物/地球科学/数学",
+    "link": "https://phet.colorado.edu/zh_CN/",
+    "desc": "176 个互动仿真，132 种语言；离线桌面 App/单个下载",
+    "access": "免费",
+    "note": "CC BY 3.0 / GPL；适合虚拟实验与概念探究"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "数学工具",
+    "name": "GeoGebra",
+    "scope": "数学",
+    "link": "https://www.geogebra.org/",
+    "desc": "计算器、几何、3D、统计；100 万+ 社区教学资源",
+    "access": "非商业免费",
+    "note": "源码 EUPL/GPL；商用需单独授权"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "全科课程",
+    "name": "Khan Academy",
+    "scope": "K12 全科",
+    "link": "https://www.khanacademy.org/",
+    "desc": "视频课程、练习、学习进度",
+    "access": "免费",
+    "note": "CC BY-NC-SA；中文内容相对有限"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "OER 总库",
+    "name": "OER Commons",
+    "scope": "K12+高教",
+    "link": "https://www.oercommons.org/",
+    "desc": "开放教育资源搜索，可按学段/学科/许可筛选",
+    "access": "免费",
+    "note": "许可因资源而异，下载前看资源页标注"
+  },
+  {
+    "cat": "开放教材",
+    "sub": "计算机",
+    "name": "Code.org",
+    "scope": "K12 计算机",
+    "link": "https://code.org/",
+    "desc": "编程课程、教案、在线练习",
+    "access": "免费",
+    "note": "CC BY-NC-SA；少儿编程"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "知识图谱",
+    "name": "cn-math-taxonomy",
+    "scope": "小学—高中 11 学科",
+    "link": "https://github.com/xiaoyang111222/cn-math-taxonomy",
+    "desc": "4221 个知识点、6681 条先修关系、17031 道题；自适应回溯诊断，生成补学路径",
+    "access": "免费",
+    "note": "仓库未标注明确许可证；在线演示：xiaoyang111222.github.io/cn-math-taxonomy/"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "题库考试",
+    "name": "学之思 xzs",
+    "scope": "K12",
+    "link": "https://github.com/mindskip/xzs",
+    "desc": "在线考试系统：单选/多选/判断/填空/解答，支持数学公式；Web + 微信小程序；Docker 部署",
+    "access": "免费（AGPL-3.0）",
+    "note": "商用需购买授权；AGPL 有源码开放义务"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "错题本",
+    "name": "wrong-notebook",
+    "scope": "中小学错题/复习",
+    "link": "https://github.com/margrop/wrong-notebook",
+    "desc": "AI 错题本：拍照/PDF/Word 识题、解答、知识点标签、举一反三、组卷打印、掌握度跟踪",
+    "access": "免费",
+    "note": "fork 自 wttwins/wrong-notebook；TypeScript/Next.js；Docker/桌面/Android；需自备 AI Key 或 OAuth"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "题库考试",
+    "name": "题有据",
+    "scope": "中小学数学",
+    "link": "https://gitee.com/chenniucha/题有据",
+    "desc": "Windows 本地数学题库：试卷拍照/PDF/Word 导入，AI 自动切题，核对入库，搜索、组卷打印",
+    "access": "免费",
+    "note": "Gitee 项目；适合中小学数学老师；本地运行"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "题库考试",
+    "name": "SmartKBS 智慧教学平台",
+    "scope": "小学—高中",
+    "link": "https://gitee.com/youufis/SmartKBS",
+    "desc": "题库与智能组卷、考试、作业、自动批改、课堂闯关/抢答、学情分析等 60+ 功能",
+    "access": "免费（AGPL-3.0）",
+    "note": "FastAPI + React；SQLite；可完全离线；支持 DashScope/DeepSeek/Ollama"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "答题小程序",
+    "name": "MidAnswer",
+    "scope": "中小学",
+    "link": "https://github.com/mengxiaoyucc/MidAnswer",
+    "desc": "答题小程序：分类题库、随机抽题、答题竞赛、排行榜、Excel 导入题库",
+    "access": "免费",
+    "note": "143 stars；约 2 年未更新；许可证未标注，适合参考/二次开发"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "语文文化",
+    "name": "chinese-poetry",
+    "scope": "语文古诗文",
+    "link": "https://github.com/chinese-poetry/chinese-poetry",
+    "desc": "5.5 万首唐诗、26 万首宋诗、2.1 万首宋词；含诗经、论语、四书五经、蒙学等",
+    "access": "免费（MIT）",
+    "note": "JSON 格式；适合诗词库、飞花令、背诵 App"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "语文文化",
+    "name": "京墨 jingmo",
+    "scope": "中华文化/语文",
+    "link": "https://github.com/hefengbao/jingmo",
+    "desc": "诗文 110 万篇、名句 1 万、成语 49639、字典 20552 字、词典 320349 词",
+    "access": "免费",
+    "note": "Android App；许可证以仓库为准"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "识字写字",
+    "name": "hanzi-writer",
+    "scope": "小学识字/写字",
+    "link": "https://github.com/chanind/hanzi-writer",
+    "desc": "9000+ 汉字笔顺动画、描红练习测验；库仅约 30KB",
+    "access": "免费",
+    "note": "代码 MIT；字形数据来自 Make Me a Hanzi，按 Arphic Public License"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "识字写字",
+    "name": "makemeahanzi",
+    "scope": "汉字数据",
+    "link": "https://github.com/skishore/makemeahanzi",
+    "desc": "9000+ 常用简繁汉字的字典与笔顺矢量数据",
+    "access": "免费",
+    "note": "字典数据 LGPL；字形数据 Arphic Public License；hanzi-writer 的数据源"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "拼音",
+    "name": "pinyin-pro",
+    "scope": "语文拼音",
+    "link": "https://github.com/zh-lx/pinyin-pro",
+    "desc": "汉字转拼音：声母/韵母/声调/多音字/姓氏模式/拼音匹配/分词",
+    "access": "免费（MIT）",
+    "note": "JS/TS 库；浏览器与 Node.js 均可用"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "数学",
+    "name": "GeoGebra 源码",
+    "scope": "数学",
+    "link": "https://github.com/geogebra/geogebra",
+    "desc": "动态几何、代数、3D、统计、CAS 的源码",
+    "access": "开源（EUPL/GPL）",
+    "note": "完整软件非商业免费；商用需授权"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "科学",
+    "name": "PhET 源码",
+    "scope": "物理/化学/生物/数学",
+    "link": "https://github.com/phetsims",
+    "desc": "176 个互动仿真及依赖库源码",
+    "access": "开源（GPLv3/MIT）",
+    "note": "新仿真 GPLv3，可复用库 MIT；支持离线打包"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "少儿编程",
+    "name": "Scratch",
+    "scope": "小学—初中 编程",
+    "link": "https://github.com/scratchfoundation/scratch-gui",
+    "desc": "图形化编程编辑器；可自建/二次开发",
+    "access": "开源（BSD 系，按仓库）",
+    "note": "免费；项目内容默认 CC BY-SA"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "少儿编程",
+    "name": "Blockly",
+    "scope": "小学—初中 编程",
+    "link": "https://github.com/google/blockly",
+    "desc": "拖拽式可视化编程库，Scratch/Code.org 的底层引擎之一",
+    "access": "免费（Apache-2.0）",
+    "note": "适合开发编程教育产品"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "天文地理",
+    "name": "Stellarium",
+    "scope": "地理/天文",
+    "link": "https://github.com/Stellarium/stellarium",
+    "desc": "免费天象馆：星座、行星、日食、星空模拟",
+    "access": "免费（GPL-2.0）",
+    "note": "适合课堂演示/天文社团"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "化学",
+    "name": "Avogadro",
+    "scope": "化学",
+    "link": "https://github.com/OpenChemistry/avogadro",
+    "desc": "分子编辑与 3D 可视化",
+    "access": "免费（GPL-2.0）",
+    "note": "适合分子结构/立体化学教学"
+  },
+  {
+    "cat": "开源项目",
+    "sub": "课堂教学",
+    "name": "OpenBoard",
+    "scope": "全学科课堂",
+    "link": "https://github.com/OpenBoard-org/OpenBoard",
+    "desc": "开源互动白板：板书、批注、录课",
+    "access": "免费（GPL-3.0）",
+    "note": "适合替代商业白板软件"
+  }
+]

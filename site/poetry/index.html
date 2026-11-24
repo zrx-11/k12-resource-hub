@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>古诗文阅读库 · K12 资源枢纽</title>
+<meta name="description" content="蒙学、诗经、论语、唐诗、宋词、元曲，可检索、可复制的古诗文阅读库。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../">K12 资源枢纽 <small>Resource Hub</small></a>
+    <nav class="nav">
+      <a href="../">资源导航</a>
+      <a class="active" href="./">诗词库</a>
+      <a href="../hanzi/">笔顺</a>
+      <a href="../pinyin/">拼音</a>
+      <a href="../cn-math-taxonomy/">知识图谱</a>
+      <a href="../downloads/">下载指南</a>
+      <a href="../about/">关于与许可</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" style="padding-bottom:18px">
+    <div class="kicker">CHINESE POETRY · 离线可读</div>
+    <h1>古诗文阅读库</h1>
+    <p class="lede">蒙学、诗经、论语、唐诗、宋词、元曲。按题目、作者、诗句搜索；点开即可读，支持复制与随机抽一篇。</p>
+    <div class="meta-row">
+      <span><i class="dot"></i><b id="poem-count">—</b> 篇</span>
+      <span><i class="dot"></i>数据来自 chinese-poetry（MIT）</span>
+      <span><i class="dot"></i>简繁已统一为简体</span>
+    </div>
+  </section>
+
+  <section class="poetry-main">
+    <aside class="poetry-side">
+      <h2>分类</h2>
+      <div class="cat-list" id="cat-list">
+        <button class="cat-btn active" data-cat="全部">全部</button>
+        <button class="cat-btn" data-cat="蒙学">蒙学</button>
+        <button class="cat-btn" data-cat="诗经">诗经</button>
+        <button class="cat-btn" data-cat="论语">论语</button>
+        <button class="cat-btn" data-cat="唐诗">唐诗</button>
+        <button class="cat-btn" data-cat="宋诗">宋诗</button>
+        <button class="cat-btn" data-cat="宋词">宋词</button>
+        <button class="cat-btn" data-cat="元曲">元曲</button>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-top:16px;line-height:1.6">选“全部”会按分类顺序排列；搜索只查当前分类。</p>
+    </aside>
+
+    <div class="poetry-content">
+      <div class="poetry-toolbar">
+        <input id="poem-search" class="search" type="search" placeholder="搜索题目、作者或诗句，例如：静夜思、李白、明月">
+      </div>
+      <div class="poem-layout">
+        <div class="poem-list" id="poem-list"></div>
+        <article class="poem-reader" id="poem-reader">
+          <p class="poem-by">正在载入……</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p>诗词数据来自 <a href="https://github.com/chinese-poetry/chinese-poetry" target="_blank" rel="noopener">chinese-poetry</a>（MIT），经 OpenCC 转为简体；本站仅做阅读界面与检索，未改动原文内容。</p>
+      <p>部分长篇（如《琵琶行》《长恨歌》）按原段落展示，阅读时以教材注释为准。</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about/">来源与许可</a>
+      <a href="../downloads/">下载指南</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/poetry.js"></script>
+</body>
+</html>

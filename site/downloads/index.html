@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>下载指南 · K12 资源枢纽</title>
+<meta name="description" content="哪些资源已经下载、哪些可以下载、哪些不适合托管到 GitHub Pages，以及教材下载的三条路线。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../">K12 资源枢纽 <small>Resource Hub</small></a>
+    <nav class="nav">
+      <a href="../">资源导航</a>
+      <a href="../poetry/">诗词库</a>
+      <a href="../hanzi/">笔顺</a>
+      <a href="../pinyin/">拼音</a>
+      <a href="../cn-math-taxonomy/">知识图谱</a>
+      <a class="active" href="./">下载指南</a>
+      <a href="../about/">关于与许可</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <div class="kicker">DOWNLOAD · 先把边界说清楚</div>
+  <h1>下载指南</h1>
+  <p class="lede">“能下载的先下载”不等于把 41GB 教材塞进 GitHub Pages。下面分三档：已经下载到工作区的、可以按需下载的、不适合托管的。</p>
+
+  <div class="callout">
+    <strong>结论：</strong>开源数据和小型工具已经下载并部署；教材 PDF 因为体积与版权，只保留官方入口和下载工具链，不在本站托管；需要后端/数据库的项目（学之思、SmartKBS、wrong-notebook）只给部署说明和仓库链接。
+  </div>
+
+  <h2>一、已经下载到工作区</h2>
+  <div class="table-wrap">
+    <table class="plain">
+      <thead><tr><th>资源</th><th>体积</th><th>用途</th><th>站点里的位置</th></tr></thead>
+      <tbody>
+        <tr><td>chinese-poetry 全量仓库</td><td>约 454MB</td><td>唐诗、宋词、元曲、蒙学、诗经、论语原始 JSON</td><td>抽取为 <code>data/poetry.json</code>，见“诗词库”</td></tr>
+        <tr><td>hanzi-writer-data</td><td>约 47MB</td><td>9000+ 汉字笔顺与字形数据</td><td><code>data/hanzi/</code>，见“笔顺”</td></tr>
+        <tr><td>hanzi-writer</td><td>约 892KB</td><td>笔顺动画库</td><td><code>assets/hanzi-writer.min.js</code></td></tr>
+        <tr><td>pinyin-pro</td><td>约 1.2MB</td><td>汉字转拼音</td><td><code>assets/pinyin-pro.js</code>，见“拼音”</td></tr>
+        <tr><td>cn-math-taxonomy</td><td>约 65MB</td><td>11 学科知识图谱、诊断、题库</td><td><code>cn-math-taxonomy/</code>，见“知识图谱”</td></tr>
+        <tr><td>53 项资源索引</td><td>约 12KB</td><td>官方平台、课件试卷、开放教材、开源项目</td><td><code>data/resources.json</code>，见首页</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>二、可以按需下载，但没有全量搬过来</h2>
+  <div class="table-wrap">
+    <table class="plain">
+      <thead><tr><th>资源</th><th>体积/规模</th><th>为什么没全量下载</th><th>建议怎么拿</th></tr></thead>
+      <tbody>
+        <tr>
+          <td><a href="https://github.com/TapXWorld/ChinaTextbook" target="_blank" rel="noopener">ChinaTextbook</a></td>
+          <td>41.53GB，8 种教材版本</td>
+          <td>超过 GitHub Pages 建议的 1GB 站点上限；全量下载后也很难在手机端使用</td>
+          <td>只下载你所在学校用的版本和册次；用 <a href="https://github.com/TapXWorld/ChinaTextbook-tools" target="_blank" rel="noopener">ChinaTextbook-tools</a> 合并 35MB 分卷</td>
+        </tr>
+        <tr>
+          <td><a href="https://github.com/happycola233/tchMaterial-parser" target="_blank" rel="noopener">tchMaterial-parser</a></td>
+          <td>桌面 GUI，按册下载</td>
+          <td>不是静态网页，不能部署到 Pages；下载行为应在本地完成</td>
+          <td>在 Windows/Linux/macOS 本地运行，粘贴国家平台教材预览页 URL，按册下载</td>
+        </tr>
+        <tr>
+          <td>国家平台精品课/任务单</td>
+          <td>按课时下载</td>
+          <td>需要登录/权限，且资源会更新；镜像会过期</td>
+          <td>直接去 <a href="https://basic.smartedu.cn/tchMaterial" target="_blank" rel="noopener">国家平台教材专区</a> 和 <a href="https://jpk.basic.smartedu.cn/publicity" target="_blank" rel="noopener">精品课专区</a></td>
+        </tr>
+        <tr>
+          <td>莲山/学科网/菁优网课件试卷</td>
+          <td>单份几 MB 到几十 MB</td>
+          <td>版权归原站点/作者，且部分需学币；不适合批量镜像</td>
+          <td>按需下载到本地，不要二次分发；优先用全免费的莲山、第一课件网、绿色圃</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>三、三条教材下载路线</h2>
+  <p><strong>路线 A：官方平台，最稳。</strong>打开 <a href="https://basic.smartedu.cn/tchMaterial" target="_blank" rel="noopener">basic.smartedu.cn/tchMaterial</a>，按“学段—学科—版本—册次”找到教材，在线阅读或下载 PDF。人教社版本也可以在 <a href="https://jc.pep.com.cn/" target="_blank" rel="noopener">jc.pep.com.cn</a> 找。优点是正版、免费、版本清楚；缺点是部分教材只有在线阅读。</p>
+  <p><strong>路线 B：tchMaterial-parser，批量。</strong>在本地运行工具，粘贴教材预览页 URL，批量下载并自动命名、加书签。适合老师一次拉齐一册。注意：仅限个人学习；无 Token 的回退下载方式不保证长期有效。</p>
+  <p><strong>路线 C：ChinaTextbook，离线归档。</strong>适合已经有明确版本需求、能处理 35MB 分卷合并的人。不要一上来 clone 41GB；先看目录，只拉需要的年级/学科/版本。</p>
+
+  <div class="warn-callout callout">
+    <strong>版权提醒：</strong>教材 PDF 的版权归原出版社。官方平台与聚合仓库都限定个人学习使用；不要去除水印、二次售卖、打包卖“无水印版”，也不要把整册 PDF 直接放到公开站点。
+  </div>
+
+  <h2>四、哪些项目能部署到 Pages，哪些不能</h2>
+  <div class="table-wrap">
+    <table class="plain">
+      <thead><tr><th>项目</th><th>类型</th><th>能否 Pages</th><th>处理方式</th></tr></thead>
+      <tbody>
+        <tr><td>本站资源导航、诗词库、笔顺、拼音</td><td>静态 HTML/JS</td><td><span class="badge">已部署</span></td><td>本站直接提供</td></tr>
+        <tr><td>cn-math-taxonomy</td><td>静态 PWA</td><td><span class="badge">已部署</span></td><td>镜像到 <code>/cn-math-taxonomy/</code>，CC BY-NC 4.0 署名</td></tr>
+        <tr><td>chinese-poetry</td><td>JSON 数据</td><td><span class="badge">已抽取</span></td><td>抽取常用篇目，不发布 454MB 全量</td></tr>
+        <tr><td>hanzi-writer / pinyin-pro</td><td>前端库</td><td><span class="badge">已集成</span></td><td>作为静态资源加载</td></tr>
+        <tr><td>学之思 xzs</td><td>Java 后端 + 数据库</td><td><span class="badge no">不能</span></td><td>需服务器/Docker；给出仓库和部署入口</td></tr>
+        <tr><td>SmartKBS</td><td>FastAPI + React + SQLite</td><td><span class="badge no">不能</span></td><td>需服务器或本地运行</td></tr>
+        <tr><td>wrong-notebook</td><td>Next.js + 数据库 + AI Key</td><td><span class="badge no">不能</span></td><td>Docker/桌面/Android 本地部署</td></tr>
+        <tr><td>tchMaterial-parser</td><td>桌面 GUI</td><td><span class="badge no">不能</span></td><td>本地运行，只放下载说明</td></tr>
+        <tr><td>PhET / GeoGebra</td><td>大型仿真/应用</td><td><span class="badge link">外链</span></td><td>官方站点直接使用；不镜像 176 个仿真</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>五、本地下载建议</h2>
+  <ul>
+    <li>先确认学校教材版本：人教/统编、北师大、苏教、浙教、沪教、外研、译林等。版本不对，下载再多也没用。</li>
+    <li>一次只下一个学期、一个学科。PDF 命名成“版本-年级-册次-学科”，以后好找。</li>
+    <li>重要教材至少留两份：官方平台下载一份，本地硬盘/网盘一份；不要只依赖一个链接。</li>
+    <li>给孩子的设备只放当前学期内容；全量 41GB 放在电脑或移动硬盘，不要塞进手机。</li>
+    <li>开源项目先看 LICENSE：MIT/BSD 可较自由使用；AGPL 商用要谨慎；CC BY-NC 不能商用。</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p>下载指南是操作建议，不构成版权授权。具体资源能否下载、能否商用，以原站/原仓库的最新声明为准。</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about/">来源与许可</a>
+      <a href="../">返回资源导航</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

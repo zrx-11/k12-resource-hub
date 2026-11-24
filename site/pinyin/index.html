@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拼音标注工具 · K12 资源枢纽</title>
+<meta name="description" content="汉字转拼音：声调符号、数字声调、无声调，支持多音字、逐字对照。">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="../">K12 资源枢纽 <small>Resource Hub</small></a>
+    <nav class="nav">
+      <a href="../">资源导航</a>
+      <a href="../poetry/">诗词库</a>
+      <a href="../hanzi/">笔顺</a>
+      <a class="active" href="./">拼音</a>
+      <a href="../cn-math-taxonomy/">知识图谱</a>
+      <a href="../downloads/">下载指南</a>
+      <a href="../about/">关于与许可</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" style="padding-bottom:18px">
+    <div class="kicker">PINYIN · 离线可用</div>
+    <h1>拼音标注工具</h1>
+    <p class="lede">把一段中文转成拼音。支持声调符号、数字声调、无声调和逐字对照；多音字按词语优先判断。</p>
+    <div class="meta-row">
+      <span><i class="dot"></i>pinyin-pro 3.29.5</span>
+      <span><i class="dot"></i>MIT</span>
+      <span><i class="dot"></i>浏览器本地运行，不上传文本</span>
+    </div>
+  </section>
+
+  <section class="pinyin-layout">
+    <div class="pinyin-panel">
+      <h2>输入中文</h2>
+      <textarea id="pinyin-input" class="pinyin-text" placeholder="例如：长大以后，我想当一名老师。">长大以后，我想当一名老师。</textarea>
+      <div class="option-row">
+        <label><input type="radio" name="tone" value="symbol" checked> 声调符号（zhōng）</label>
+        <label><input type="radio" name="tone" value="num"> 数字声调（zhong1）</label>
+        <label><input type="radio" name="tone" value="none"> 无声调（zhong）</label>
+        <label><input type="checkbox" id="multiple" checked> 按词语判断多音字</label>
+      </div>
+      <button id="convert" class="solid-btn">转换为拼音</button>
+      <button id="copy-pinyin" class="ghost-btn">复制结果</button>
+      <div class="pinyin-examples" id="examples">
+        <button data-text="长大以后，我想当一名老师。">长大 / 老师</button>
+        <button data-text="银行行长在音乐厅里弹钢琴。">银行 / 行长 / 音乐</button>
+        <button data-text="单老师教我们解方程。">姓氏“单”</button>
+        <button data-text="重庆市的重工业很发达。">重庆 / 重工业</button>
+      </div>
+      <div id="pinyin-output" class="pinyin-output" style="margin-top:12px">zhǎng dà yǐ hòu，wǒ xiǎng dāng yī míng lǎo shī。</div>
+    </div>
+
+    <div class="pinyin-panel">
+      <h2>逐字对照</h2>
+      <div class="table-wrap">
+        <table class="pinyin-table" id="pinyin-table">
+          <thead><tr><th>字</th><th>拼音</th><th>声母</th><th>韵母</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="callout" style="margin-top:14px;font-size:12.5px">
+        多音字提示：“长大”的“长”读 zhǎng，“长河”的“长”读 cháng；姓氏“单”读 shàn，“单数”的“单”读 dān。工具只能按词语概率判断，教材注音仍以课本为准。
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p>拼音库来自 <a href="https://github.com/zh-lx/pinyin-pro" target="_blank" rel="noopener">pinyin-pro</a>（MIT）。转换在浏览器本地完成，不会把输入文本发送到服务器。</p>
+      <p>拼音只作读音参考；多音字、轻声、儿化、变调以教材和教师教学为准。</p>
+    </div>
+    <div class="footer-links">
+      <a href="../about/">来源与许可</a>
+      <a href="../downloads/">下载指南</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/pinyin-pro.js"></script>
+<script src="../assets/pinyin.js"></script>
+</body>
+</html>

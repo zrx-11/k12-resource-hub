@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>K12 资源枢纽 · 中小学学习资料与开源项目</title>
+<meta name="description" content="中小学学习资料导航：官方教材平台、免费课件试卷、开放教材、开源项目，以及可离线使用的诗词库、汉字笔顺、拼音工具和知识图谱。">
+<link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="./">K12 资源枢纽 <small>Resource Hub</small></a>
+    <nav class="nav">
+      <a class="active" href="./">资源导航</a>
+      <a href="./poetry/">诗词库</a>
+      <a href="./hanzi/">笔顺</a>
+      <a href="./pinyin/">拼音</a>
+      <a href="./cn-math-taxonomy/">知识图谱</a>
+      <a href="./downloads/">下载指南</a>
+      <a href="./about/">关于与许可</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <div class="kicker">2026-11-24 检索整理 · 个人非商业站点</div>
+    <h1>中小学学习资料与开源项目</h1>
+    <p class="lede">把“能找到”变成“能打开、能下载、能离线用”。这里保留 53 项资源的检索结果，并把适合静态部署的部分做成了可以直接使用的小工具：诗词阅读、汉字笔顺、拼音标注、知识图谱诊断。</p>
+    <div class="meta-row">
+      <span><i class="dot"></i>53 项资源</span>
+      <span><i class="dot"></i>5 个站内工具</span>
+      <span><i class="dot"></i>教材 PDF 不托管，只给官方入口</span>
+    </div>
+
+    <div class="quick-grid">
+      <a class="quick-card" href="./poetry/">
+        <span class="icon">诗</span>
+        <strong>古诗文阅读库</strong>
+        <span>蒙学、诗经、论语、唐诗、宋词、元曲，可检索、可复制</span>
+      </a>
+      <a class="quick-card" href="./hanzi/">
+        <span class="icon">字</span>
+        <strong>汉字笔顺</strong>
+        <span>9000+ 汉字笔顺动画、描红、拼音与笔画数</span>
+      </a>
+      <a class="quick-card" href="./pinyin/">
+        <span class="icon">音</span>
+        <strong>拼音标注</strong>
+        <span>声调符号/数字/无声调，多音字与逐字对照</span>
+      </a>
+      <a class="quick-card" href="./cn-math-taxonomy/">
+        <span class="icon">图</span>
+        <strong>知识图谱诊断</strong>
+        <span>11 学科、4221 个知识点，答错回溯前置薄弱点</span>
+      </a>
+      <a class="quick-card" href="./downloads/">
+        <span class="icon">下</span>
+        <strong>教材下载指南</strong>
+        <span>官方平台、ChinaTextbook、批量下载工具与边界说明</span>
+      </a>
+      <a class="quick-card" href="#resources">
+        <span class="icon">目</span>
+        <strong>全部 53 项</strong>
+        <span>按官方平台、教材、课件试卷、开放教材、开源项目筛选</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="section wrap" id="resources">
+    <div class="section-head">
+      <div>
+        <h2>资源目录</h2>
+        <p>优先官方与正版；开源项目标注许可证；教材内容仅限个人学习。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="toolbar">
+    <div class="wrap">
+      <input id="search" class="search" type="search" placeholder="搜索名称、学科、用途，例如：教材、试卷、古诗、错题、数学、化学">
+      <div class="chips" id="chips">
+        <button class="chip active" data-cat="全部">全部</button>
+        <button class="chip" data-cat="官方平台">官方平台</button>
+        <button class="chip" data-cat="教材获取">教材获取</button>
+        <button class="chip" data-cat="课件教案试卷">课件/试卷</button>
+        <button class="chip" data-cat="开放教材">开放教材</button>
+        <button class="chip" data-cat="开源项目">开源项目</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="count" id="count">正在载入目录……</div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden>没有匹配结果，换个关键词试试。</div>
+  </section>
+
+  <section class="section wrap">
+    <div class="callout">
+      <strong>使用边界：</strong>本站不托管教材 PDF、商业题库或需要登录的资源。国家平台与人教社资源免费但禁止商用；GitHub 仓库的 LICENSE 只覆盖代码或整理工作，不覆盖教材内容本身。
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <p>K12 资源枢纽：个人非商业整理，检索时间 2026-11-24。资源链接、免费政策与授权协议可能随原站调整。</p>
+      <p>站内工具的数据来源：chinese-poetry（MIT）、hanzi-writer / Make Me a Hanzi（MIT / Arphic）、pinyin-pro（MIT）、cn-math-taxonomy（CC BY-NC 4.0）。</p>
+    </div>
+    <div class="footer-links">
+      <a href="./about/">来源与许可</a>
+      <a href="./downloads/">下载指南</a>
+      <a href="https://github.com/zrx-11/k12-resource-hub">GitHub 仓库</a>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/resource.js"></script>
+</body>
+</html>
